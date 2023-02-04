@@ -1,0 +1,9 @@
+L = Laplacian;
+A = -L+diag(diag(L));
+g = graph(A);
+plot(g,'LineWidth',g.Edges.Weight,'EdgeColor','r','Layout','circle','NodeLabel',names,'NodeFontSize',5);
+axis square;
+axis off;
+ax=gca;
+% exportgraphics(ax,'./results/egilmez_cgl_alpha0.jpg','Resolution',300)
+% exportgraphics(ax,'./results/gl_bernoulli_animal_graph_alpha-04_beta01.jpg','Resolution',300)
