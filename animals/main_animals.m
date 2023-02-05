@@ -1,5 +1,6 @@
 %% GLEN demo
 clear;close all
+addpath("../GLEN");
 %% load
 load('animals.mat');
 X_noisy = data;
@@ -24,7 +25,7 @@ for i = 1:length(alpha)
             param.beta = beta(j);
             param.gamma = 0;
 
-            [L,Y,offset,L_iter,O_iter] = gl_bernoulli_log(X_noisy, param);
+            [L,Y,offset,L_iter,O_iter] = glen_bernoulli(X_noisy, param);
             Lcell{i,j} = L;
     end
 end
