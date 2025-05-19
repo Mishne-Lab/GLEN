@@ -1,5 +1,4 @@
 # GLEN-Graph-Laplacian-Learning-with-Exponential-Family-Noise
-Learning combinatorial graph laplacian from signals of various data types
 
 A common challenge in applying graph machine learning methods is that the underlying graph of a system is often unknown. 
 Although different graph inference methods have been pro- posed for continuous graph signals, inferring the graph structure underlying other types of data, such as discrete counts, is under-explored. 
